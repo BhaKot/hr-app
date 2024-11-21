@@ -1,4 +1,4 @@
-"""Python setup.py for project_name package"""
+"""Python setup.py for hr_app package"""
 
 import io
 import os
@@ -7,7 +7,7 @@ from setuptools import find_packages, setup
 
 def read(*paths, **kwargs):
     """Read the contents of a text file safely.
-    >>> read("project_name", "VERSION")
+    >>> read("hr_app", "VERSION")
     '0.1.0'
     >>> read("README.md")
     ...
@@ -32,7 +32,7 @@ def read_requirements(path):
 
 setup(
     name="hr-app",
-    version=read("project_name", "VERSION"),
+    version=read("hr_app", "VERSION"),
     description="HR Analytics and Reporting Application",
     url="https://github.com/BhaKot/hr-app/",
     long_description=read("README.md"),
@@ -40,6 +40,6 @@ setup(
     author="bharat_kothapalli",
     packages=find_packages(exclude=["tests", ".github"]),
     install_requires=read_requirements("requirements.txt"),
-    entry_points={"console_scripts": ["project_name = project_name.__main__:main"]},
+    entry_points={"console_scripts": ["hr_app = hr_app.__main__:main"]},
     extras_require={"test": read_requirements("requirements-test.txt")},
 )

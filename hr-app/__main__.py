@@ -1,6 +1,6 @@
-"""Entry point for project_name."""
+"""Entry point for hr_app."""
 
-from project_name.cli import main  # pragma: no cover
+from hr_app.cli import main  # pragma: no cover
 
 if __name__ == "__main__":  # pragma: no cover
     main()
